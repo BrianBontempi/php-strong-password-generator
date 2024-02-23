@@ -33,5 +33,9 @@ if (isset($_GET['length'])) {
         <input type="submit" value="Generate password">
     </form>
 
+    <?php if (isset($password)){?>
+        <h2>Password generata:</h2>
+        <p><?php echo $password; ?></p>
+    <?php }?>
 </body>
 </html>
